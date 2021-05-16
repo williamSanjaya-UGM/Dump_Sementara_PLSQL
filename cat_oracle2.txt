@@ -1,0 +1,31 @@
+// delete statement, to delete 1 full row
+DELETE FROM TABLE_NAME WHERE CONDITION;
+cth:
+DELETE FROM REST_MAST_INVENTORY WHERE REST_MAST_INVENTORY.ID=3
+
+// to check constraint from a table
+select OWNER,CONSTRAINT_NAME ,COLUMN_NAME,POSITION  from  User_cons_columns where TABLE_NAME='REST_DETAIL_INVENTORY';
+
+
+SELECT * FROM USER_CONSTRAINTS WHERE TABLE_NAME = 'REST_DETAIL_INVENTORY';
+
+https://docs.oracle.com/cd/B10500_01/appdev.920/a96624/08_subs.htm#895
+Using the IN Mode
+An IN parameter lets you pass values to the subprogram being called. Inside the subprogram, an IN parameter acts like a constant. Therefore, it cannot be assigned a value.
+
+Using the OUT Mode
+An OUT parameter lets you return values to the caller of a subprogram. Inside the subprogram, an OUT parameter acts like a variable. 
+That means you can use an OUT formal parameter as if it were a local variable
+
+Using the IN OUT Mode
+An IN OUT parameter lets you pass initial values to the subprogram being called and return updated values to the caller. Inside the subprogram, an IN OUT parameter acts like an initialized variable. Therefore, it can be assigned a value and its value can be assigned to another variable.
+
+The actual parameter that corresponds to an IN OUT formal parameter must be a variable; it cannot be a constant or an expression.
+
+
+https://blogs.oracle.com/sql/how-to-create-and-use-indexes-in-oracle-database#:~:text=Unique%20Indexes&text=When%20you%20create%20a%20primary,build%20the%20index%20for%20you.
+https://www.tutorialspoint.com/difference-between-views-and-materialized-views-in-sql#:~:text=Views%20are%20generally%20used%20when,get%20updated%20on%20frequent%20basis.
+
+https://blogs.oracle.com/oraclemagazine/on-object-types-in-collections
+https://www.guru99.com/object-types-pl-sql.html
+https://stackoverflow.com/questions/48451560/sql-type-in-pl-sql-and-type-as-a-table
